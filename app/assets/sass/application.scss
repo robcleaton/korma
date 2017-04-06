@@ -54,6 +54,10 @@ $path: "/public/images/";
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 body {
   background: #F5F5F5 !important;
+  font-family: Ubuntu;
+}
+h1.heading-xlarge, p.lede {
+  font-family: Ubuntu;
 }
 a:focus, a:active {
   background: none;
@@ -315,6 +319,50 @@ input:focus, input:active {
   }
 }
 
+.serp {
+  background: #fff;
+  padding: 40px 0px;
+  font-size: 14px;
+  .wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .card {
+    border-bottom: 1px solid $Keylines;
+    padding: 20px 0px;
+  }
+  .card:first-of-type {
+    border-top: 1px solid $Keylines;
+  }
+  .rest-logo {
+    background: red;
+    width: 54px;
+    height: 54px;
+    float: left;
+    margin-right: 16px;
+  }
+  h3 a {
+    font-family: Ubuntu;
+    font-weight: 500;
+    text-decoration: none;
+    color: $TextDarkGrey;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  p {
+    color: $TextLightGrey;
+    margin: 0px;
+  }
+  .rating {
+    background: url('/public/images/rating.png') 0 0 no-repeat;
+    height: 20px;
+    background-size: 80px;
+  }
+  .content {
+    margin-left: 75px;
+  }
+}
 
 // CODE SNIPPET
 .code-snippet {
