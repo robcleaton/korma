@@ -60,6 +60,10 @@ a:focus, a:active {
   border: none;
   outline: none;
 }
+input:focus, input:active {
+  border: none;
+  outline: none;
+}
 
 .JE-header {
   background: #fff;
@@ -243,6 +247,7 @@ a:focus, a:active {
   float: left;
   padding: 20px 0px;
   ul {
+    margin-left: 20px;
     li {
       float: left;
       padding-bottom: 16px;
@@ -264,6 +269,41 @@ a:focus, a:active {
   }
 }
 
+// Forms
+.forms {
+  font-size: 14px;
+  label {
+    font-family: Ubuntu;
+    float: left;
+    color: $TextMidGrey;
+    margin-bottom: 4px;
+  }
+  input {
+    clear: both;
+    width: 400px;
+    float: left;
+    border-radius: 4px;
+    border: none;
+    height: 40px;
+    padding-left: 16px;
+    border: 1px solid $Keylines
+  }
+  .form-group {
+    margin-bottom: 16px;
+    float: left;
+  }
+  button {
+    height: 50px;
+    width: 100%;
+    max-width: 418px;
+    background: $AAblue;
+    font-size: 16px;
+    font-family: Ubuntu;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+}
 
 
 // CODE SNIPPET
