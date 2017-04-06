@@ -101,7 +101,8 @@ input:focus, input:active {
   width: 100%;
   float: left;
   ul {
-    margin-left: 14px;
+    max-width: 960px;
+    margin: 0 auto;
     li {
       float: left;
       /* font-family: 'HindVadodaraMedium';*/
@@ -139,6 +140,10 @@ input:focus, input:active {
   float: left;
   width: 100%;
 
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
   .col-4 {
     width: 25%;
     float: left;
@@ -193,13 +198,17 @@ input:focus, input:active {
   }
   h2 {
     font-size: 30px;
+    width: 100%;
+    float: left;
+    margin-bottom: 18px;
   }
 }
 
 .search {
-  background: $TextLightestGrey;
+  background: rgba(0,0,0,0.5);
   width: 100%;
   font-family: Ubuntu;
+  clear: both;
     .wrapper {
       max-width: 600px;
       margin: 0 auto;
@@ -208,6 +217,7 @@ input:focus, input:active {
     h2 {
       text-align: center;
       color: #fff;
+      font-size: 18px;
     }
     input {
       margin-top: 10px;
