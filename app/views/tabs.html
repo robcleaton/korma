@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Just Eat Prototyping kit
+{% endblock %}
+
+{% block content %}
+
+<style>
+</style>
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+
+      <h1 class="heading-xlarge">
+        Tabs
+      </h1>
+
+      <div class="tabs">
+        <ul>
+          <li><a href="#">Option 1</a></li>
+          <li><a href="#">Option 2</a></li>
+          <li class="active"><a href="#">Option 3</a></li>
+        </ul>
+      </div>
+
+      <div class="code-snippet">
+        <h2 class="heading-medium">Code snippet</h2>
+
+        <textarea rows="8">
+          <div class="tabs">
+            <ul>
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li class="active"><a href="#">Option 3</a></li>
+            </ul>
+          </div>
+        </textarea>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

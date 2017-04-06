@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Just Eat Prototyping kit
+{% endblock %}
+
+{% block content %}
+
+<style>
+.code-snippet {
+  float: left;
+  clear: both;
+}
+.heading-medium {
+  margin-top: 0px;
+}
+textarea {
+  padding: 20px 0px;
+  width: 900px;
+  float: left;
+}
+</style>
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+
+      <h1 class="heading-xlarge">
+        Headers
+      </h1>
+
+      <div class="JE-header">
+        <div class="JE-logo">Just eat</div>
+        <ul>
+          <li><a href="#">Menu 1</a></li>
+          <li><a href="#">Menu 2</a></li>
+          <li><a href="#">Menu 3</a></li>
+        </ul>
+      </div>
+
+      <div class="code-snippet">
+        <h2 class="heading-medium">Code snippet</h2>
+
+        <textarea rows="8">
+          <div class="JE-header">
+            <div class="JE-logo">Just eat</div>
+             <ul>
+              <li><a href="#">Menu 1</a></li>
+              <li><a href="#">Menu 2</a></li>
+              <li><a href="#">Menu 3</a></li>
+             </ul>
+          </div>
+        </textarea>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

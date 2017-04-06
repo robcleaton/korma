@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Just Eat Prototyping kit
+{% endblock %}
+
+{% block content %}
+
+<style>
+</style>
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+
+      <h1 class="heading-xlarge">
+        Search
+      </h1>
+
+      <div class="search">
+        <div class="wrapper">
+          <h2>Search for a restaurant, postcode or area</h2>
+          <input placeholder="Gourmet Burger, SW22"></input>
+          <button>Find restaurants</button>
+        </div>
+      </div>
+
+      <div class="code-snippet">
+        <h2 class="heading-medium">Code snippet</h2>
+
+        <textarea rows="8">
+          <div class="search">
+            <div class="wrapper">
+              <h2>Search for a restaurant, postcode or area</h2>
+              <input placeholder="Gourmet Burger, SW22"></input>
+              <button>Find restaurants</button>
+            </div>
+          </div>
+        </textarea>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

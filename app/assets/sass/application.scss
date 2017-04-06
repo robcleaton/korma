@@ -1,0 +1,287 @@
+// Path to assets for use with the file-url function
+// in the govuk frontend toolkit's url-helpers partial
+$path: "/public/images/";
+
+// Import GOV.UK elements from /govuk-modules/, this will import the frontend toolkit and some base styles.
+// Take a look in /govuk-modules/_govuk-elements.scss to see which files are imported.
+@import 'govuk-elements';
+
+// Take a look at in app/assets/sass/patterns/ to see which files are imported.
+@import 'patterns/check-your-answers';
+@import 'patterns/task-list';
+@import 'patterns/colours';
+@import 'patterns/typography';
+
+// Related items
+// (These styles will be moved to GOV.UK elements, duplicating here for now.)
+.govuk-related-items {
+  margin-top: $gutter;
+  border-top: 10px solid $govuk-blue;
+  padding-top: 5px;
+
+  .heading-medium {
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+  }
+
+  li {
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+}
+#global-header {
+  background-color: #fff;
+  height: 60px;
+  padding-top: 10px;
+  border-bottom: 4px solid $AAred;
+  .header-wrapper {
+    background-color: #fff !important;
+  }
+  .header-logo {
+    background: url('/public/images/just-eat-logo-master-red.png')0 0 no-repeat;
+    background-size: 160px;
+    text-indent: -9000px;
+  }
+}
+#global-header-bar, .footer-wrapper {
+  display: none;
+}
+#global-header .header-proposition #proposition-name {
+  color: $TextDarkGrey;
+}
+
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+body {
+  background: #F5F5F5 !important;
+}
+a:focus, a:active {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.JE-header {
+  background: #fff;
+  height: 72px;
+  width: 100%;
+  border-bottom: 4px solid $AAred;
+  .JE-logo {
+    background: url('/public/images/just-eat-logo-master-red.png')0 0 no-repeat;
+    width: 200px;
+    height: 30px;
+    background-size: 144px;
+    text-indent: -9000px;
+    float: left;
+    margin: 26px 20px;
+  }
+  ul {
+    float: right;
+  }
+  ul li {
+    float: left;
+    padding: 28px 8px;
+  }
+  ul li a {
+    color: blue;
+    text-decoration: none;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    font-size: 16px;
+    color: $AAblue;
+  }
+}
+.breadcrumb {
+  background: #fff;
+  padding: 16px 0px;
+  width: 100%;
+  float: left;
+  ul {
+    margin-left: 14px;
+    li {
+      float: left;
+      /* font-family: 'HindVadodaraMedium';*/
+      font-size: 14px;
+      margin-right: 8px;
+    }
+    li a {
+      color: $TextDarkGrey;
+      text-decoration: none;
+    }
+    li a.active {
+      color: $TextLightestGrey;
+    }
+    li a:hover {
+      text-decoration: underline;
+    }
+    li:after {
+      content: '>';
+      margin: 10px 0px;
+      padding-left: 10px;
+    }
+    li:last-of-type:after {
+      display: none;
+    }
+  }
+}
+
+
+.JE-footer {
+  background: #f8f8f8;
+  font-size: 16px;
+  font-family: Ubuntu;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  float: left;
+  width: 100%;
+
+  .col-4 {
+    width: 25%;
+    float: left;
+  }
+  ul li {
+    padding: 4px 0px;
+  }
+  a {
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    color: $TextLightestGrey;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: $TextDarkGrey;
+  }
+  h4 {
+    border-bottom: 1px solid #ccc;
+    height: 32px;
+    font-weight: 500;
+  }
+  .other-logos {
+    background: url('/public/images/otherlogos.png') 0px 10px no-repeat;
+    height: 80px;
+    background-size: 960px;
+    float: left;
+    width: 100%;
+    display: block;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+  }
+}
+
+
+// Hero Image
+.JE-heroimage {
+  background: red url('/public/images/heroimage.jpg') 0 0 no-repeat;
+  height: 510px;
+  background-size: cover;
+  h1, h2 {
+    color: #fff;
+    font-family: Ubuntu;
+    font-weight: 500;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+  h1 {
+    font-size: 64px;
+    margin-top: 150px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+
+.search {
+  background: $TextLightestGrey;
+  width: 100%;
+  font-family: Ubuntu;
+    .wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px 0px;
+    }
+    h2 {
+      text-align: center;
+      color: #fff;
+    }
+    input {
+      margin-top: 10px;
+      width: 100%;
+      border-radius: 3px;
+      padding-left: 16px;
+      border: none;
+      height: 50px;
+      font-size: 18px;
+    }
+    input:focus, button:focus {
+      border: none;
+      outline: none;
+    }
+    button {
+      background: #266ABD;
+      font-family: Ubuntu;
+      font-weight: 500;
+      height: 44px;
+      position: relative;
+      float: right;
+      margin: 0px;
+      margin-right: -12px;
+      margin-top: -48px;
+      border: none;
+      border-radius: 2px;
+      font-size: 16px;
+      color: #fff;
+      padding: 0px 18px;
+    }
+}
+
+//Tabs
+.tabs {
+  width: 100%;
+  background: #fff;
+  float: left;
+  padding: 20px 0px;
+  ul {
+    li {
+      float: left;
+      padding-bottom: 16px;
+      margin-right: 20px;
+      a {
+        text-decoration: none;
+        color: $TextLightGrey;
+        font-size: 16px;
+      }
+      a:hover {
+        color: $TextDarkGrey;
+      }
+    }
+    li.active {
+      float: left;
+      border-bottom: 4px solid $SelectedBlue;
+      color: $TextDarkGrey;
+    }
+  }
+}
+
+
+
+// CODE SNIPPET
+.code-snippet {
+  float: left;
+  clear: both;
+  margin-top: 40px;
+
+  .heading-medium {
+    margin-top: 0px;
+  }
+  textarea {
+    color: $TextMidGrey;
+    background: #fff;
+    padding: 20px 0px;
+    width: 960px;
+    float: left;
+    border-radius: 4px;
+    border: 1px solid $Keylines !important;
+  }
+}
