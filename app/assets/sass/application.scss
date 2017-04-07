@@ -46,6 +46,9 @@ $path: "/public/images/";
 #global-header-bar, .footer-wrapper {
   display: none;
 }
+#global-header.with-proposition .header-wrapper .header-global {
+  width: 18%;
+}
 #global-header .header-proposition #proposition-name {
   color: $TextDarkGrey;
 }
@@ -64,11 +67,38 @@ a:focus, a:active {
   border: none;
   outline: none;
 }
-input:focus, input:active {
+button:focus, button:active, input:focus, input:active {
   border: none;
   outline: none;
 }
 
+p.lede {
+  color: $TextLightGrey;
+  margin-bottom: 40px;
+}
+a {
+  font-family: Ubuntu;
+  color: $AAblue;
+}
+a.btn-hero {
+  background: $AAblue;
+  border: none;
+  padding: 20px 30px;
+  color: white;
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  float: left;
+  clear: both;
+  margin-top: 40px;
+}
+a.btn-hero:hover {
+  background: $SelectedBlue;
+}
+
+// Just Eat Header
 .JE-header {
   background: #fff;
   height: 72px;
@@ -208,6 +238,7 @@ input:focus, input:active {
   }
 }
 
+// Search
 .search {
   background: rgba(0,0,0,0.5);
   width: 100%;
@@ -268,7 +299,7 @@ input:focus, input:active {
       margin-right: 20px;
       a {
         text-decoration: none;
-        color: $TextLightGrey;
+        color: $TextLightestGrey;
         font-size: 16px;
       }
       a:hover {
@@ -278,14 +309,26 @@ input:focus, input:active {
     li.active {
       float: left;
       border-bottom: 4px solid $SelectedBlue;
+    }
+    li.active a {
       color: $TextDarkGrey;
+      font-weight: 500;
     }
   }
 }
 
 // Forms
 .forms {
+  background: white;
   font-size: 14px;
+  float: left;
+  width: 100%;
+  padding: 40px 0px;
+  .wrapper {
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+  }
   label {
     font-family: Ubuntu;
     float: left;
@@ -335,12 +378,14 @@ input:focus, input:active {
     border-top: 1px solid $Keylines;
   }
   .rest-logo {
-    background: red;
+    background: red url('https://media2.giphy.com/media/3rgXBDmDQA3U5UwcTu/giphy.gif') 0 0 no-repeat;
+    background-size: cover;
     width: 54px;
     height: 54px;
     float: left;
     margin-right: 16px;
   }
+
   h3 a {
     font-family: Ubuntu;
     font-weight: 500;

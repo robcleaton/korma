@@ -5,6 +5,17 @@
 {% endblock %}
 
 {% block content %}
+<style>
+li a {
+  font-family: Ubuntu;
+  color: #2771CD !important;
+  text-decoration: none;
+}
+li a:hover {
+  color: #14509C !important;
+  text-decoration: underline;
+}
+</style>
 
 <main id="content" role="main">
   <div class="grid-row">
@@ -12,7 +23,7 @@
 
       <h1 class="heading-xlarge">Just Eat prototype kit</h1>
       <p class="lede">
-        This is a WIP of the Just Eat prototyping kit. From here you can grab small snippets of code and make your own working prototypes.
+        Here you can grab small snippets of code and make your own working prototypes.
       </p>
 
       <h2 class="heading-medium">Elements</h2>
@@ -28,7 +39,11 @@
         <li><a href="serp">SERP</a></li>
 			</ul>
 
-      <a href="example">Example page</a>
+      <ul class="list list-bullet">
+				<li><a href="example">Example page</a></li>
+			</ul>
+
+      <a class="btn-hero" type="submit" href="example">Download the kit</a>
 
     </div>
   </div>
